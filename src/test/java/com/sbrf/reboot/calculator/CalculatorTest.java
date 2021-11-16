@@ -27,7 +27,23 @@ class CalculatorTest {
     }
 
     @Test
+    void getPow() {
+        assertEquals(1024, Calculator.getPow(2, 10));
+    }
+
+    @Test
+    void getFactorial() {
+        assertEquals(120, Calculator.getFactorial(5));
+    }
+
+    @Test
+    void getPercent() {
+        assertEquals(0.05, Calculator.getPercent(5));
+    }
+
+    @Test
     void classHasSevenMethods(){
         assertEquals(7,Calculator.class.getMethods().length-Object.class.getMethods().length);
     }
+
 }
