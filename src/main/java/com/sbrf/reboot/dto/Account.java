@@ -23,5 +23,4 @@ public class Account {
     public LocalDate getCreateDate() {
         return createDate;
     }
-
 }
